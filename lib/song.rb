@@ -48,6 +48,9 @@ def self.alphabetical
 end
 
 def self.new_from_filename(filename)
+  #remove mp3
+  #parse through the string - with the " "
+  
 end
 
 end
