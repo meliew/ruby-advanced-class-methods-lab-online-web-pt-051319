@@ -56,4 +56,13 @@ def self.new_from_filename(filename)
   song
 end
 
+def self.create_from_filename(filename)
+  #remove .mp3
+  song_array = filename.slice(0, filename.length-4).split(" - ")
+  song = Song.new
+  song.name = song_array[1]
+  song.artist_name = song_array[0]
+  song.save
+  song
+end
 end
