@@ -47,7 +47,7 @@ def self.alphabetical
 
 end
 
-def self.create_from_filename(filename)
+def self.new_from_filename(filename)
   #remove .mp3
   song_array = filename.slice(0, filename.length-4).split(" - ")
   song = Song.new
